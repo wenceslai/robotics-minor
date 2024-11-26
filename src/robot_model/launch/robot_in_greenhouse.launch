@@ -1,0 +1,10 @@
+<launch>
+  <!-- Launch Gazebo with a custom world -->
+  <param name="robot_model_path" value="$(find robot_model)/world/greenhouse.world" />
+  
+  <node name="gazebo" pkg="gazebo_ros" type="gzserver" args="$(arg world_file)" />
+  <node name="gazebo_gui" pkg="gazebo_ros" type="gzclient" args="--gui" />
+
+  <!-- Spawn the robot in Gazebo -->
+  <node name="spawn_robot" pkg="gazebo_ros" type="spawn_model" args="-file $(find robot_model)/model/robot.sdf -sdf -model greenhouse_robot -param robot_model_path" />
+</launch>

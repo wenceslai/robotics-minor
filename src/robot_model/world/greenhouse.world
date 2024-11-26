@@ -1,0 +1,60 @@
+on="1.6">
+  <world name="greenhouse_world">
+    
+    <!-- Sunlight -->
+    <light name="sun" type="directional">
+      <pose>0 0 10 0 0 0</pose>
+      <attenuation>
+        <range>1000</range>
+      </attenuation>
+      <diffuse>1 1 1 1</diffuse>
+      <specular>1 1 1 1</specular>
+    </light>
+
+    <!-- Greenhouse Model -->
+    <model name="greenhouse">
+      <pose>0 0 0 0 0 0</pose>
+      <link name="frame">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>15 15 7</size> <!-- Greenhouse dimensions -->
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>15 15 7</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Pipe Rails between plants (with 51mm diameter) -->
+    <model name="pipe_rails">
+      <pose>2 2 0 0 0 0</pose>
+      <link name="rail">
+        <collision name="rail_collision">
+          <geometry>
+            <cylinder>
+              <radius>0.051</radius> <!-- 51mm radius -->
+              <length>10</length> <!-- Length of the rail -->
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="rail_visual">
+          <geometry>
+            <cylinder>
+              <radius>0.051</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+    <!-- More pipe rails can be added as needed -->
+  </world>
+</sdf>

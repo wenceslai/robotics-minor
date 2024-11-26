@@ -1,0 +1,67 @@
+[0.000000] (-) TimerEvent: {}
+[0.001389] (alignment) JobQueued: {'identifier': 'alignment', 'dependencies': OrderedDict()}
+[0.001588] (alignment) JobStarted: {'identifier': 'alignment'}
+[0.099222] (-) TimerEvent: {}
+[0.199582] (-) TimerEvent: {}
+[0.299932] (-) TimerEvent: {}
+[0.400282] (-) TimerEvent: {}
+[0.500700] (-) TimerEvent: {}
+[0.601015] (-) TimerEvent: {}
+[0.701305] (-) TimerEvent: {}
+[0.801573] (-) TimerEvent: {}
+[0.901909] (-) TimerEvent: {}
+[1.002248] (-) TimerEvent: {}
+[1.102577] (-) TimerEvent: {}
+[1.142160] (alignment) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/elias/git/robotics-minor/build/alignment/build', '--no-deps', 'symlink_data'], 'cwd': '/home/elias/git/robotics-minor/build/alignment', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'elias', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/elias', 'OLDPWD': '/home/elias', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'elias', 'NAME': 'DESKTOP-PVM8MP0', 'WSL_INTEROP': '/run/WSL/631_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/home/elias/git/robotics-minor/src/robot_model/model', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu24.04LTS_2404.1.24.0_x64__79rhkp1fndgsc:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/GnuPG/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/gs/gs10.03.0/bin:/mnt/c/Users/Elias/AppData/Roaming/local/bin:/mnt/c/Users/Elias/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Elias/AppData/Roaming/cabal/bin:/mnt/c/tools/ghc-9.0.1/bin:/mnt/c/tools/msys64:/snap/bin', 'RUNLEVEL': '3', 'XDG_RUNTIME_DIR': '/home/elias/xdg', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/elias/git/robotics-minor/build/alignment', 'QT_QPA_PLATFORM': 'xcb', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/elias/git/robotics-minor/build/alignment/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elias/git/robotics-minor/install/alignment/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'WSLENV': ''}, 'shell': False}
+[1.202690] (-) TimerEvent: {}
+[1.303037] (-) TimerEvent: {}
+[1.403340] (-) TimerEvent: {}
+[1.503646] (-) TimerEvent: {}
+[1.599623] (alignment) StdoutLine: {'line': b'running develop\n'}
+[1.600066] (alignment) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.\n'}
+[1.600195] (alignment) StderrLine: {'line': b'!!\n'}
+[1.600293] (alignment) StderrLine: {'line': b'\n'}
+[1.600386] (alignment) StderrLine: {'line': b'        ********************************************************************************\n'}
+[1.600476] (alignment) StderrLine: {'line': b'        Please avoid running ``setup.py`` and ``easy_install``.\n'}
+[1.600563] (alignment) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[1.600651] (alignment) StderrLine: {'line': b'        standards-based tools.\n'}
+[1.600738] (alignment) StderrLine: {'line': b'\n'}
+[1.600921] (alignment) StderrLine: {'line': b'        See https://github.com/pypa/setuptools/issues/917 for details.\n'}
+[1.601099] (alignment) StderrLine: {'line': b'        ********************************************************************************\n'}
+[1.601268] (alignment) StderrLine: {'line': b'\n'}
+[1.601429] (alignment) StderrLine: {'line': b'!!\n'}
+[1.601617] (alignment) StderrLine: {'line': b'  easy_install.initialize_options(self)\n'}
+[1.603763] (-) TimerEvent: {}
+[1.704052] (-) TimerEvent: {}
+[1.804385] (-) TimerEvent: {}
+[1.866859] (alignment) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)\n'}
+[1.867080] (alignment) StderrLine: {'line': b'  self.local_index = Environment(self.shadow_path + sys.path)\n'}
+[1.904523] (-) TimerEvent: {}
+[1.920439] (alignment) StdoutLine: {'line': b'running egg_info\n'}
+[1.920800] (alignment) StdoutLine: {'line': b'creating alignment.egg-info\n'}
+[1.951158] (alignment) StdoutLine: {'line': b'writing alignment.egg-info/PKG-INFO\n'}
+[1.951572] (alignment) StdoutLine: {'line': b'writing dependency_links to alignment.egg-info/dependency_links.txt\n'}
+[1.951885] (alignment) StdoutLine: {'line': b'writing entry points to alignment.egg-info/entry_points.txt\n'}
+[1.952393] (alignment) StdoutLine: {'line': b'writing requirements to alignment.egg-info/requires.txt\n'}
+[1.952652] (alignment) StdoutLine: {'line': b'writing top-level names to alignment.egg-info/top_level.txt\n'}
+[1.953060] (alignment) StdoutLine: {'line': b"writing manifest file 'alignment.egg-info/SOURCES.txt'\n"}
+[2.004664] (-) TimerEvent: {}
+[2.010664] (alignment) StdoutLine: {'line': b"reading manifest file 'alignment.egg-info/SOURCES.txt'\n"}
+[2.011543] (alignment) StdoutLine: {'line': b"writing manifest file 'alignment.egg-info/SOURCES.txt'\n"}
+[2.042302] (alignment) StdoutLine: {'line': b'running build_ext\n'}
+[2.042699] (alignment) StdoutLine: {'line': b'Creating /home/elias/git/robotics-minor/install/alignment/lib/python3.12/site-packages/alignment.egg-link (link to .)\n'}
+[2.043620] (alignment) StdoutLine: {'line': b'Installing is_aligned_node script to /home/elias/git/robotics-minor/install/alignment/lib/alignment\n'}
+[2.044151] (alignment) StdoutLine: {'line': b'Installing motor_control_node script to /home/elias/git/robotics-minor/install/alignment/lib/alignment\n'}
+[2.044619] (alignment) StdoutLine: {'line': b'Installing obstacle_detection_node script to /home/elias/git/robotics-minor/install/alignment/lib/alignment\n'}
+[2.045113] (alignment) StdoutLine: {'line': b'\n'}
+[2.045395] (alignment) StdoutLine: {'line': b'Installed /home/elias/git/robotics-minor/build/alignment\n'}
+[2.045663] (alignment) StdoutLine: {'line': b'running symlink_data\n'}
+[2.046086] (alignment) StdoutLine: {'line': b'creating /home/elias/git/robotics-minor/install/alignment/share/ament_index\n'}
+[2.046431] (alignment) StdoutLine: {'line': b'creating /home/elias/git/robotics-minor/install/alignment/share/ament_index/resource_index\n'}
+[2.046557] (alignment) StdoutLine: {'line': b'creating /home/elias/git/robotics-minor/install/alignment/share/ament_index/resource_index/packages\n'}
+[2.046814] (alignment) StdoutLine: {'line': b'symbolically linking /home/elias/git/robotics-minor/build/alignment/resource/alignment -> /home/elias/git/robotics-minor/install/alignment/share/ament_index/resource_index/packages\n'}
+[2.047219] (alignment) StdoutLine: {'line': b'symbolically linking /home/elias/git/robotics-minor/build/alignment/package.xml -> /home/elias/git/robotics-minor/install/alignment/share/alignment\n'}
+[2.099999] (alignment) CommandEnded: {'returncode': 0}
+[2.104781] (-) TimerEvent: {}
+[2.117266] (alignment) JobEnded: {'identifier': 'alignment', 'rc': 0}
+[2.119279] (-) EventReactorShutdown: {}
