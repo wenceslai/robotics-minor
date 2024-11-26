@@ -1,0 +1,12 @@
+package.xml
+setup.cfg
+setup.py
+launch/usb_cam_launch.py
+resource/usb_cam_launch_pkg
+usb_cam_launch_pkg/__init__.py
+usb_cam_launch_pkg.egg-info/PKG-INFO
+usb_cam_launch_pkg.egg-info/SOURCES.txt
+usb_cam_launch_pkg.egg-info/dependency_links.txt
+usb_cam_launch_pkg.egg-info/requires.txt
+usb_cam_launch_pkg.egg-info/top_level.txt
+usb_cam_launch_pkg.egg-info/zip-safe

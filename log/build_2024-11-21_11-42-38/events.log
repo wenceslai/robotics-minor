@@ -1,0 +1,115 @@
+[0.000000] (-) TimerEvent: {}
+[0.000505] (alignment) JobQueued: {'identifier': 'alignment', 'dependencies': OrderedDict()}
+[0.001277] (usb_cam_launch_pkg) JobQueued: {'identifier': 'usb_cam_launch_pkg', 'dependencies': OrderedDict()}
+[0.001347] (alignment) JobStarted: {'identifier': 'alignment'}
+[0.029760] (usb_cam_launch_pkg) JobStarted: {'identifier': 'usb_cam_launch_pkg'}
+[0.099645] (-) TimerEvent: {}
+[0.200049] (-) TimerEvent: {}
+[0.301666] (-) TimerEvent: {}
+[0.402111] (-) TimerEvent: {}
+[0.502506] (-) TimerEvent: {}
+[0.602942] (-) TimerEvent: {}
+[0.703309] (-) TimerEvent: {}
+[0.803861] (-) TimerEvent: {}
+[0.904300] (-) TimerEvent: {}
+[1.004668] (-) TimerEvent: {}
+[1.105142] (-) TimerEvent: {}
+[1.205972] (-) TimerEvent: {}
+[1.307447] (-) TimerEvent: {}
+[1.407839] (-) TimerEvent: {}
+[1.514254] (-) TimerEvent: {}
+[1.619434] (-) TimerEvent: {}
+[1.719917] (-) TimerEvent: {}
+[1.820724] (-) TimerEvent: {}
+[1.922192] (-) TimerEvent: {}
+[2.022570] (-) TimerEvent: {}
+[2.122976] (-) TimerEvent: {}
+[2.223323] (-) TimerEvent: {}
+[2.324214] (-) TimerEvent: {}
+[2.424848] (-) TimerEvent: {}
+[2.526226] (-) TimerEvent: {}
+[2.627258] (-) TimerEvent: {}
+[2.728950] (-) TimerEvent: {}
+[2.830212] (-) TimerEvent: {}
+[2.931846] (-) TimerEvent: {}
+[3.033001] (-) TimerEvent: {}
+[3.134419] (-) TimerEvent: {}
+[3.237367] (-) TimerEvent: {}
+[3.248463] (alignment) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/robot/greenline/build/alignment/build', '--no-deps', 'symlink_data'], 'cwd': '/home/robot/greenline/build/alignment', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robot', 'SSH_CLIENT': '192.168.0.113 39830 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/robot', 'OLDPWD': '/home/robot', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/robot/greenline/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'robot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'tmux-256color', 'XDG_SESSION_ID': '3', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/robot/greenline/install/usb_cam_launch_pkg:/home/robot/greenline/install/alignment:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/robot/greenline/build/alignment', 'SSH_CONNECTION': '192.168.0.113 39830 192.168.0.104 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robot/greenline/build/alignment/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robot/greenline/install/alignment/lib/python3.12/site-packages:/home/robot/greenline/build/usb_cam_launch_pkg:/home/robot/greenline/install/usb_cam_launch_pkg/lib/python3.12/site-packages:/home/robot/greenline/build/alignment:/home/robot/greenline/install/alignment/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1'}, 'shell': False}
+[3.272149] (usb_cam_launch_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/robot/greenline/build/usb_cam_launch_pkg/build', '--no-deps', 'symlink_data'], 'cwd': '/home/robot/greenline/build/usb_cam_launch_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robot', 'SSH_CLIENT': '192.168.0.113 39830 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/robot', 'OLDPWD': '/home/robot', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/robot/greenline/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'robot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'tmux-256color', 'XDG_SESSION_ID': '3', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/robot/greenline/install/usb_cam_launch_pkg:/home/robot/greenline/install/alignment:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/robot/greenline/build/usb_cam_launch_pkg', 'SSH_CONNECTION': '192.168.0.113 39830 192.168.0.104 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robot/greenline/build/usb_cam_launch_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robot/greenline/install/usb_cam_launch_pkg/lib/python3.12/site-packages:/home/robot/greenline/build/usb_cam_launch_pkg:/home/robot/greenline/install/usb_cam_launch_pkg/lib/python3.12/site-packages:/home/robot/greenline/build/alignment:/home/robot/greenline/install/alignment/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1'}, 'shell': False}
+[3.337674] (-) TimerEvent: {}
+[3.439408] (-) TimerEvent: {}
+[3.539858] (-) TimerEvent: {}
+[3.640867] (-) TimerEvent: {}
+[3.741660] (-) TimerEvent: {}
+[3.842592] (-) TimerEvent: {}
+[3.944182] (-) TimerEvent: {}
+[4.005496] (alignment) StdoutLine: {'line': b'running develop\n'}
+[4.009318] (alignment) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.\n'}
+[4.009584] (alignment) StderrLine: {'line': b'!!\n'}
+[4.009672] (alignment) StderrLine: {'line': b'\n'}
+[4.009748] (alignment) StderrLine: {'line': b'        ********************************************************************************\n'}
+[4.009823] (alignment) StderrLine: {'line': b'        Please avoid running ``setup.py`` and ``easy_install``.\n'}
+[4.009897] (alignment) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[4.009980] (alignment) StderrLine: {'line': b'        standards-based tools.\n'}
+[4.010294] (alignment) StderrLine: {'line': b'\n'}
+[4.010670] (alignment) StderrLine: {'line': b'        See https://github.com/pypa/setuptools/issues/917 for details.\n'}
+[4.010788] (alignment) StderrLine: {'line': b'        ********************************************************************************\n'}
+[4.010872] (alignment) StderrLine: {'line': b'\n'}
+[4.010952] (alignment) StderrLine: {'line': b'!!\n'}
+[4.011033] (alignment) StderrLine: {'line': b'  easy_install.initialize_options(self)\n'}
+[4.047236] (-) TimerEvent: {}
+[4.110875] (usb_cam_launch_pkg) StdoutLine: {'line': b'running develop\n'}
+[4.111404] (usb_cam_launch_pkg) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.\n'}
+[4.111588] (usb_cam_launch_pkg) StderrLine: {'line': b'!!\n'}
+[4.111687] (usb_cam_launch_pkg) StderrLine: {'line': b'\n'}
+[4.111775] (usb_cam_launch_pkg) StderrLine: {'line': b'        ********************************************************************************\n'}
+[4.111856] (usb_cam_launch_pkg) StderrLine: {'line': b'        Please avoid running ``setup.py`` and ``easy_install``.\n'}
+[4.111935] (usb_cam_launch_pkg) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[4.112014] (usb_cam_launch_pkg) StderrLine: {'line': b'        standards-based tools.\n'}
+[4.112105] (usb_cam_launch_pkg) StderrLine: {'line': b'\n'}
+[4.112239] (usb_cam_launch_pkg) StderrLine: {'line': b'        See https://github.com/pypa/setuptools/issues/917 for details.\n'}
+[4.112327] (usb_cam_launch_pkg) StderrLine: {'line': b'        ********************************************************************************\n'}
+[4.112408] (usb_cam_launch_pkg) StderrLine: {'line': b'\n'}
+[4.112504] (usb_cam_launch_pkg) StderrLine: {'line': b'!!\n'}
+[4.112587] (usb_cam_launch_pkg) StderrLine: {'line': b'  easy_install.initialize_options(self)\n'}
+[4.150342] (-) TimerEvent: {}
+[4.251054] (-) TimerEvent: {}
+[4.356220] (-) TimerEvent: {}
+[4.385332] (alignment) StdoutLine: {'line': b'running egg_info\n'}
+[4.415872] (alignment) StdoutLine: {'line': b'writing alignment.egg-info/PKG-INFO\n'}
+[4.417408] (alignment) StdoutLine: {'line': b'writing dependency_links to alignment.egg-info/dependency_links.txt\n'}
+[4.418294] (alignment) StdoutLine: {'line': b'writing entry points to alignment.egg-info/entry_points.txt\n'}
+[4.419908] (alignment) StdoutLine: {'line': b'writing requirements to alignment.egg-info/requires.txt\n'}
+[4.420925] (alignment) StdoutLine: {'line': b'writing top-level names to alignment.egg-info/top_level.txt\n'}
+[4.457194] (-) TimerEvent: {}
+[4.478409] (alignment) StdoutLine: {'line': b"reading manifest file 'alignment.egg-info/SOURCES.txt'\n"}
+[4.480375] (alignment) StdoutLine: {'line': b"writing manifest file 'alignment.egg-info/SOURCES.txt'\n"}
+[4.508750] (usb_cam_launch_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[4.509547] (alignment) StdoutLine: {'line': b'running build_ext\n'}
+[4.516339] (alignment) StdoutLine: {'line': b'Creating /home/robot/greenline/install/alignment/lib/python3.12/site-packages/alignment.egg-link (link to .)\n'}
+[4.521223] (alignment) StdoutLine: {'line': b'Installing is_aligned_node script to /home/robot/greenline/install/alignment/lib/alignment\n'}
+[4.521806] (alignment) StdoutLine: {'line': b'Installing motor_control_node script to /home/robot/greenline/install/alignment/lib/alignment\n'}
+[4.523097] (alignment) StdoutLine: {'line': b'\n'}
+[4.523333] (alignment) StdoutLine: {'line': b'Installed /home/robot/greenline/build/alignment\n'}
+[4.523453] (alignment) StdoutLine: {'line': b'running symlink_data\n'}
+[4.551624] (usb_cam_launch_pkg) StdoutLine: {'line': b'writing usb_cam_launch_pkg.egg-info/PKG-INFO\n'}
+[4.552386] (usb_cam_launch_pkg) StdoutLine: {'line': b'writing dependency_links to usb_cam_launch_pkg.egg-info/dependency_links.txt\n'}
+[4.555693] (usb_cam_launch_pkg) StdoutLine: {'line': b'writing requirements to usb_cam_launch_pkg.egg-info/requires.txt\n'}
+[4.555890] (usb_cam_launch_pkg) StdoutLine: {'line': b'writing top-level names to usb_cam_launch_pkg.egg-info/top_level.txt\n'}
+[4.557318] (-) TimerEvent: {}
+[4.657984] (-) TimerEvent: {}
+[4.680677] (alignment) CommandEnded: {'returncode': 0}
+[4.704480] (usb_cam_launch_pkg) StdoutLine: {'line': b"reading manifest file 'usb_cam_launch_pkg.egg-info/SOURCES.txt'\n"}
+[4.710290] (usb_cam_launch_pkg) StdoutLine: {'line': b"writing manifest file 'usb_cam_launch_pkg.egg-info/SOURCES.txt'\n"}
+[4.730248] (alignment) JobEnded: {'identifier': 'alignment', 'rc': 0}
+[4.758108] (-) TimerEvent: {}
+[4.759282] (usb_cam_launch_pkg) StdoutLine: {'line': b'running build_ext\n'}
+[4.760157] (usb_cam_launch_pkg) StdoutLine: {'line': b'Creating /home/robot/greenline/install/usb_cam_launch_pkg/lib/python3.12/site-packages/usb-cam-launch-pkg.egg-link (link to .)\n'}
+[4.765025] (usb_cam_launch_pkg) StdoutLine: {'line': b'\n'}
+[4.765428] (usb_cam_launch_pkg) StdoutLine: {'line': b'Installed /home/robot/greenline/build/usb_cam_launch_pkg\n'}
+[4.765777] (usb_cam_launch_pkg) StdoutLine: {'line': b'running symlink_data\n'}
+[4.858472] (-) TimerEvent: {}
+[4.900585] (usb_cam_launch_pkg) CommandEnded: {'returncode': 0}
+[4.917761] (usb_cam_launch_pkg) JobEnded: {'identifier': 'usb_cam_launch_pkg', 'rc': 0}
+[4.920539] (-) EventReactorShutdown: {}

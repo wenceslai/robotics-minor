@@ -1,0 +1,31 @@
+[1.530s] Invoking command in '/home/robot/greenline/build/alignment': PYTHONPATH=/home/robot/greenline/build/alignment/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robot/greenline/install/alignment/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/robot/greenline/build/alignment/build --no-deps symlink_data
+[1.985s] running develop
+[1.986s] /usr/lib/python3/dist-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[1.986s] !!
+[1.986s] 
+[1.986s]         ********************************************************************************
+[1.986s]         Please avoid running ``setup.py`` and ``easy_install``.
+[1.986s]         Instead, use pypa/build, pypa/installer or other
+[1.986s]         standards-based tools.
+[1.986s] 
+[1.986s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[1.986s]         ********************************************************************************
+[1.987s] 
+[1.987s] !!
+[1.987s]   easy_install.initialize_options(self)
+[2.200s] running egg_info
+[2.221s] writing alignment.egg-info/PKG-INFO
+[2.221s] writing dependency_links to alignment.egg-info/dependency_links.txt
+[2.222s] writing entry points to alignment.egg-info/entry_points.txt
+[2.223s] writing requirements to alignment.egg-info/requires.txt
+[2.223s] writing top-level names to alignment.egg-info/top_level.txt
+[2.273s] reading manifest file 'alignment.egg-info/SOURCES.txt'
+[2.274s] writing manifest file 'alignment.egg-info/SOURCES.txt'
+[2.302s] running build_ext
+[2.302s] Creating /home/robot/greenline/install/alignment/lib/python3.12/site-packages/alignment.egg-link (link to .)
+[2.303s] Installing is_aligned_node script to /home/robot/greenline/install/alignment/lib/alignment
+[2.304s] Installing motor_control_node script to /home/robot/greenline/install/alignment/lib/alignment
+[2.304s] 
+[2.304s] Installed /home/robot/greenline/build/alignment
+[2.304s] running symlink_data
+[2.404s] Invoked command in '/home/robot/greenline/build/alignment' returned '0': PYTHONPATH=/home/robot/greenline/build/alignment/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robot/greenline/install/alignment/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/robot/greenline/build/alignment/build --no-deps symlink_data

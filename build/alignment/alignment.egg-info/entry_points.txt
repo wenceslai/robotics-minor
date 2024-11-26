@@ -1,0 +1,4 @@
+[console_scripts]
+is_aligned_node = alignment.is_aligned:main
+motor_control_node = alignment.motor_control:main
+obstacle_detection_node = alignment.obstacle_detection:main

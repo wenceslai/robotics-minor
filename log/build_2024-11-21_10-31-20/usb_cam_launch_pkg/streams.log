@@ -1,0 +1,28 @@
+[2.015s] Invoking command in '/home/robot/greenline/build/usb_cam_launch_pkg': PYTHONPATH=/home/robot/greenline/build/usb_cam_launch_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robot/greenline/install/usb_cam_launch_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/robot/greenline/build/usb_cam_launch_pkg/build --no-deps symlink_data
+[2.400s] running develop
+[2.400s] /usr/lib/python3/dist-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[2.401s] !!
+[2.401s] 
+[2.401s]         ********************************************************************************
+[2.401s]         Please avoid running ``setup.py`` and ``easy_install``.
+[2.401s]         Instead, use pypa/build, pypa/installer or other
+[2.401s]         standards-based tools.
+[2.401s] 
+[2.401s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[2.401s]         ********************************************************************************
+[2.401s] 
+[2.401s] !!
+[2.401s]   easy_install.initialize_options(self)
+[2.594s] running egg_info
+[2.612s] writing usb_cam_launch_pkg.egg-info/PKG-INFO
+[2.614s] writing dependency_links to usb_cam_launch_pkg.egg-info/dependency_links.txt
+[2.615s] writing requirements to usb_cam_launch_pkg.egg-info/requires.txt
+[2.616s] writing top-level names to usb_cam_launch_pkg.egg-info/top_level.txt
+[2.656s] reading manifest file 'usb_cam_launch_pkg.egg-info/SOURCES.txt'
+[2.657s] writing manifest file 'usb_cam_launch_pkg.egg-info/SOURCES.txt'
+[2.679s] running build_ext
+[2.679s] Creating /home/robot/greenline/install/usb_cam_launch_pkg/lib/python3.12/site-packages/usb-cam-launch-pkg.egg-link (link to .)
+[2.680s] 
+[2.680s] Installed /home/robot/greenline/build/usb_cam_launch_pkg
+[2.680s] running symlink_data
+[2.839s] Invoked command in '/home/robot/greenline/build/usb_cam_launch_pkg' returned '0': PYTHONPATH=/home/robot/greenline/build/usb_cam_launch_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robot/greenline/install/usb_cam_launch_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/robot/greenline/build/usb_cam_launch_pkg/build --no-deps symlink_data
