@@ -1,0 +1,111 @@
+[0.000000] (-) TimerEvent: {}
+[0.000707] (alignment) JobQueued: {'identifier': 'alignment', 'dependencies': OrderedDict()}
+[0.001684] (robot_model) JobQueued: {'identifier': 'robot_model', 'dependencies': OrderedDict()}
+[0.001882] (alignment) JobStarted: {'identifier': 'alignment'}
+[0.021676] (robot_model) JobStarted: {'identifier': 'robot_model'}
+[0.099606] (-) TimerEvent: {}
+[0.199921] (-) TimerEvent: {}
+[0.300235] (-) TimerEvent: {}
+[0.360911] (robot_model) JobProgress: {'identifier': 'robot_model', 'progress': 'cmake'}
+[0.362433] (robot_model) Command: {'cmd': ['/usr/bin/cmake', '/home/elias/git/robotics-minor/src/robot_model', '-DCMAKE_INSTALL_PREFIX=/home/elias/git/robotics-minor/install/robot_model'], 'cwd': '/home/elias/git/robotics-minor/build/robot_model', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'elias', 'SSH_AGENT_PID': '19214', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/elias', 'OLDPWD': '/home/elias/git/robotics-minor/src/robot_model', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/elias/git/robotics-minor/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'elias', 'NAME': 'DESKTOP-PVM8MP0', 'WSL_INTEROP': '/run/WSL/631_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/home/elias/git/robotics-minor/src/robot_model/model', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu24.04LTS_2404.1.24.0_x64__79rhkp1fndgsc:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/GnuPG/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/gs/gs10.03.0/bin:/mnt/c/Users/Elias/AppData/Roaming/local/bin:/mnt/c/Users/Elias/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Elias/AppData/Roaming/cabal/bin:/mnt/c/tools/ghc-9.0.1/bin:/mnt/c/tools/msys64:/snap/bin', 'RUNLEVEL': '3', 'XDG_RUNTIME_DIR': '/home/elias/xdg', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/tmp/ssh-xCN3nRRJ30MB/agent.19213', 'AMENT_PREFIX_PATH': '/home/elias/git/robotics-minor/install/alignment:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/elias/git/robotics-minor/build/robot_model', 'QT_QPA_PLATFORM': 'xcb', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/elias/git/robotics-minor/build/alignment:/home/elias/git/robotics-minor/install/alignment/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'WSLENV': ''}), 'shell': False}
+[0.400401] (-) TimerEvent: {}
+[0.500839] (-) TimerEvent: {}
+[0.549629] (robot_model) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.600986] (-) TimerEvent: {}
+[0.701416] (-) TimerEvent: {}
+[0.801789] (-) TimerEvent: {}
+[0.819826] (robot_model) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.901957] (-) TimerEvent: {}
+[1.002431] (-) TimerEvent: {}
+[1.044623] (robot_model) StdoutLine: {'line': b'-- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[1.102563] (-) TimerEvent: {}
+[1.202961] (-) TimerEvent: {}
+[1.303352] (-) TimerEvent: {}
+[1.322786] (robot_model) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.354095] (robot_model) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.403489] (-) TimerEvent: {}
+[1.405928] (robot_model) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.459556] (robot_model) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.503611] (-) TimerEvent: {}
+[1.603988] (-) TimerEvent: {}
+[1.684685] (robot_model) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[1.693644] (robot_model) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.704109] (-) TimerEvent: {}
+[1.804513] (-) TimerEvent: {}
+[1.858670] (robot_model) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[1.904621] (-) TimerEvent: {}
+[2.005042] (-) TimerEvent: {}
+[2.059751] (alignment) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/elias/git/robotics-minor/build/alignment/build', '--no-deps', 'symlink_data'], 'cwd': '/home/elias/git/robotics-minor/build/alignment', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'elias', 'SSH_AGENT_PID': '19214', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/elias', 'OLDPWD': '/home/elias/git/robotics-minor/src/robot_model', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/elias/git/robotics-minor/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'elias', 'NAME': 'DESKTOP-PVM8MP0', 'WSL_INTEROP': '/run/WSL/631_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/home/elias/git/robotics-minor/src/robot_model/model', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu24.04LTS_2404.1.24.0_x64__79rhkp1fndgsc:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/GnuPG/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/gs/gs10.03.0/bin:/mnt/c/Users/Elias/AppData/Roaming/local/bin:/mnt/c/Users/Elias/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Elias/AppData/Roaming/cabal/bin:/mnt/c/tools/ghc-9.0.1/bin:/mnt/c/tools/msys64:/snap/bin', 'RUNLEVEL': '3', 'XDG_RUNTIME_DIR': '/home/elias/xdg', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/tmp/ssh-xCN3nRRJ30MB/agent.19213', 'AMENT_PREFIX_PATH': '/home/elias/git/robotics-minor/install/alignment:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/elias/git/robotics-minor/build/alignment', 'QT_QPA_PLATFORM': 'xcb', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/elias/git/robotics-minor/build/alignment/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elias/git/robotics-minor/install/alignment/lib/python3.12/site-packages:/home/elias/git/robotics-minor/build/alignment:/home/elias/git/robotics-minor/install/alignment/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'WSLENV': ''}, 'shell': False}
+[2.067790] (robot_model) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[2.105170] (-) TimerEvent: {}
+[2.204419] (robot_model) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.205303] (-) TimerEvent: {}
+[2.305702] (-) TimerEvent: {}
+[2.406074] (-) TimerEvent: {}
+[2.482641] (robot_model) StdoutLine: {'line': b'-- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[2.506214] (-) TimerEvent: {}
+[2.606666] (-) TimerEvent: {}
+[2.707008] (-) TimerEvent: {}
+[2.774705] (alignment) StdoutLine: {'line': b'running develop\n'}
+[2.776679] (alignment) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.\n'}
+[2.777059] (alignment) StderrLine: {'line': b'!!\n'}
+[2.777309] (alignment) StderrLine: {'line': b'\n'}
+[2.777561] (alignment) StderrLine: {'line': b'        ********************************************************************************\n'}
+[2.777853] (alignment) StderrLine: {'line': b'        Please avoid running ``setup.py`` and ``easy_install``.\n'}
+[2.778116] (alignment) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[2.778362] (alignment) StderrLine: {'line': b'        standards-based tools.\n'}
+[2.778511] (alignment) StderrLine: {'line': b'\n'}
+[2.778633] (alignment) StderrLine: {'line': b'        See https://github.com/pypa/setuptools/issues/917 for details.\n'}
+[2.778746] (alignment) StderrLine: {'line': b'        ********************************************************************************\n'}
+[2.778859] (alignment) StderrLine: {'line': b'\n'}
+[2.778971] (alignment) StderrLine: {'line': b'!!\n'}
+[2.779080] (alignment) StderrLine: {'line': b'  easy_install.initialize_options(self)\n'}
+[2.807153] (-) TimerEvent: {}
+[2.907631] (-) TimerEvent: {}
+[3.008081] (-) TimerEvent: {}
+[3.108475] (-) TimerEvent: {}
+[3.208842] (-) TimerEvent: {}
+[3.244958] (alignment) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)\n'}
+[3.245446] (alignment) StderrLine: {'line': b'  self.local_index = Environment(self.shadow_path + sys.path)\n'}
+[3.308962] (-) TimerEvent: {}
+[3.331975] (alignment) StdoutLine: {'line': b'running egg_info\n'}
+[3.387284] (alignment) StdoutLine: {'line': b'writing alignment.egg-info/PKG-INFO\n'}
+[3.387820] (alignment) StdoutLine: {'line': b'writing dependency_links to alignment.egg-info/dependency_links.txt\n'}
+[3.388496] (alignment) StdoutLine: {'line': b'writing entry points to alignment.egg-info/entry_points.txt\n'}
+[3.389142] (alignment) StdoutLine: {'line': b'writing requirements to alignment.egg-info/requires.txt\n'}
+[3.389659] (alignment) StdoutLine: {'line': b'writing top-level names to alignment.egg-info/top_level.txt\n'}
+[3.409117] (-) TimerEvent: {}
+[3.500473] (alignment) StdoutLine: {'line': b"reading manifest file 'alignment.egg-info/SOURCES.txt'\n"}
+[3.504519] (alignment) StdoutLine: {'line': b"writing manifest file 'alignment.egg-info/SOURCES.txt'\n"}
+[3.509244] (-) TimerEvent: {}
+[3.564068] (alignment) StdoutLine: {'line': b'running build_ext\n'}
+[3.564580] (alignment) StdoutLine: {'line': b'Creating /home/elias/git/robotics-minor/install/alignment/lib/python3.12/site-packages/alignment.egg-link (link to .)\n'}
+[3.565968] (alignment) StdoutLine: {'line': b'Installing is_aligned_node script to /home/elias/git/robotics-minor/install/alignment/lib/alignment\n'}
+[3.566446] (alignment) StdoutLine: {'line': b'Installing motor_control_node script to /home/elias/git/robotics-minor/install/alignment/lib/alignment\n'}
+[3.566837] (alignment) StdoutLine: {'line': b'Installing obstacle_detection_node script to /home/elias/git/robotics-minor/install/alignment/lib/alignment\n'}
+[3.567413] (alignment) StdoutLine: {'line': b'\n'}
+[3.567965] (alignment) StdoutLine: {'line': b'Installed /home/elias/git/robotics-minor/build/alignment\n'}
+[3.568179] (alignment) StdoutLine: {'line': b'running symlink_data\n'}
+[3.573229] (robot_model) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:13 (find_package):\n'}
+[3.573715] (robot_model) StderrLine: {'line': b'  By not providing "Findgazebo_ros.cmake" in CMAKE_MODULE_PATH this project\n'}
+[3.573919] (robot_model) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[3.574074] (robot_model) StderrLine: {'line': b'  "gazebo_ros", but CMake did not find one.\n'}
+[3.574221] (robot_model) StderrLine: {'line': b'\n'}
+[3.574370] (robot_model) StderrLine: {'line': b'  Could not find a package configuration file provided by "gazebo_ros" with\n'}
+[3.574521] (robot_model) StderrLine: {'line': b'  any of the following names:\n'}
+[3.574667] (robot_model) StderrLine: {'line': b'\n'}
+[3.574813] (robot_model) StderrLine: {'line': b'    gazebo_rosConfig.cmake\n'}
+[3.574961] (robot_model) StderrLine: {'line': b'    gazebo_ros-config.cmake\n'}
+[3.575108] (robot_model) StderrLine: {'line': b'\n'}
+[3.575329] (robot_model) StderrLine: {'line': b'  Add the installation prefix of "gazebo_ros" to CMAKE_PREFIX_PATH or set\n'}
+[3.575523] (robot_model) StderrLine: {'line': b'  "gazebo_ros_DIR" to a directory containing one of the above files.  If\n'}
+[3.575623] (robot_model) StderrLine: {'line': b'  "gazebo_ros" provides a separate development package or SDK, be sure it has\n'}
+[3.575713] (robot_model) StderrLine: {'line': b'  been installed.\n'}
+[3.575800] (robot_model) StderrLine: {'line': b'\n'}
+[3.575885] (robot_model) StderrLine: {'line': b'\x1b[0m\n'}
+[3.575971] (robot_model) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.609402] (-) TimerEvent: {}
+[3.611946] (robot_model) CommandEnded: {'returncode': 1}
+[3.613606] (robot_model) JobEnded: {'identifier': 'robot_model', 'rc': 1}
+[3.635364] (alignment) JobEnded: {'identifier': 'alignment', 'rc': 'SIGINT'}
+[3.646293] (-) EventReactorShutdown: {}

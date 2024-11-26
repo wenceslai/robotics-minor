@@ -1,0 +1,33 @@
+[0.346s] Invoking command in '/home/elias/git/robotics-minor/build/robot_model': /usr/bin/cmake /home/elias/git/robotics-minor/src/robot_model -DCMAKE_INSTALL_PREFIX=/home/elias/git/robotics-minor/install/robot_model
+[0.528s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.798s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.023s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.301s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.333s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.384s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.438s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.663s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.672s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.837s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[2.046s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[2.183s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.461s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[3.552s] [31mCMake Error at CMakeLists.txt:13 (find_package):
+[3.552s]   By not providing "Findgazebo_ros.cmake" in CMAKE_MODULE_PATH this project
+[3.552s]   has asked CMake to find a package configuration file provided by
+[3.552s]   "gazebo_ros", but CMake did not find one.
+[3.553s] 
+[3.553s]   Could not find a package configuration file provided by "gazebo_ros" with
+[3.553s]   any of the following names:
+[3.553s] 
+[3.553s]     gazebo_rosConfig.cmake
+[3.553s]     gazebo_ros-config.cmake
+[3.554s] 
+[3.554s]   Add the installation prefix of "gazebo_ros" to CMAKE_PREFIX_PATH or set
+[3.554s]   "gazebo_ros_DIR" to a directory containing one of the above files.  If
+[3.554s]   "gazebo_ros" provides a separate development package or SDK, be sure it has
+[3.554s]   been installed.
+[3.554s] 
+[3.554s] [0m
+[3.554s] -- Configuring incomplete, errors occurred!
+[3.591s] Invoked command in '/home/elias/git/robotics-minor/build/robot_model' returned '1': /usr/bin/cmake /home/elias/git/robotics-minor/src/robot_model -DCMAKE_INSTALL_PREFIX=/home/elias/git/robotics-minor/install/robot_model

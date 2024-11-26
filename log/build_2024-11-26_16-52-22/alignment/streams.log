@@ -1,0 +1,33 @@
+[2.624s] Invoking command in '/home/elias/git/robotics-minor/build/alignment': PYTHONPATH=/home/elias/git/robotics-minor/build/alignment/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elias/git/robotics-minor/install/alignment/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/elias/git/robotics-minor/build/alignment/build --no-deps symlink_data
+[3.375s] running develop
+[3.379s] /usr/lib/python3/dist-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[3.379s] !!
+[3.380s] 
+[3.380s]         ********************************************************************************
+[3.380s]         Please avoid running ``setup.py`` and ``easy_install``.
+[3.380s]         Instead, use pypa/build, pypa/installer or other
+[3.380s]         standards-based tools.
+[3.381s] 
+[3.381s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[3.381s]         ********************************************************************************
+[3.381s] 
+[3.381s] !!
+[3.381s]   easy_install.initialize_options(self)
+[3.907s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+[3.907s]   self.local_index = Environment(self.shadow_path + sys.path)
+[4.007s] running egg_info
+[4.065s] writing alignment.egg-info/PKG-INFO
+[4.065s] writing dependency_links to alignment.egg-info/dependency_links.txt
+[4.065s] writing entry points to alignment.egg-info/entry_points.txt
+[4.066s] writing requirements to alignment.egg-info/requires.txt
+[4.066s] writing top-level names to alignment.egg-info/top_level.txt
+[4.175s] reading manifest file 'alignment.egg-info/SOURCES.txt'
+[4.177s] writing manifest file 'alignment.egg-info/SOURCES.txt'
+[4.216s] running build_ext
+[4.216s] Creating /home/elias/git/robotics-minor/install/alignment/lib/python3.12/site-packages/alignment.egg-link (link to .)
+[4.217s] Installing is_aligned_node script to /home/elias/git/robotics-minor/install/alignment/lib/alignment
+[4.217s] Installing motor_control_node script to /home/elias/git/robotics-minor/install/alignment/lib/alignment
+[4.217s] Installing obstacle_detection_node script to /home/elias/git/robotics-minor/install/alignment/lib/alignment
+[4.218s] 
+[4.218s] Installed /home/elias/git/robotics-minor/build/alignment
+[4.219s] running symlink_data
