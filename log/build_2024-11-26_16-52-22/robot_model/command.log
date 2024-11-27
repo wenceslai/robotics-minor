@@ -1,2 +1,0 @@
-Invoking command in '/home/elias/git/robotics-minor/build/robot_model': /usr/bin/cmake /home/elias/git/robotics-minor/src/robot_model -DCMAKE_INSTALL_PREFIX=/home/elias/git/robotics-minor/install/robot_model
-Invoked command in '/home/elias/git/robotics-minor/build/robot_model' returned '1': /usr/bin/cmake /home/elias/git/robotics-minor/src/robot_model -DCMAKE_INSTALL_PREFIX=/home/elias/git/robotics-minor/install/robot_model

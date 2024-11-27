@@ -1,9 +1,0 @@
-source;share/alignment/hook/pythonpath.ps1
-source;share/alignment/hook/pythonpath.dsv
-source;share/alignment/hook/pythonpath.sh
-source;share/alignment/hook/ament_prefix_path.ps1
-source;share/alignment/hook/ament_prefix_path.dsv
-source;share/alignment/hook/ament_prefix_path.sh
-source;../../build/alignment/share/alignment/hook/pythonpath_develop.ps1
-source;../../build/alignment/share/alignment/hook/pythonpath_develop.dsv
-source;../../build/alignment/share/alignment/hook/pythonpath_develop.sh
