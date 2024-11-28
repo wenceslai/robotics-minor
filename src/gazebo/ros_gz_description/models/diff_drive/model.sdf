@@ -2,7 +2,17 @@
 <!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
-<robot name="urdf-robot.SLDASM">
+<robot name="diff_drive">
+  <link name="base_link" />
+  
+  <joint name="base_to_frame" type="fixed">
+    <parent link="base_link"/>
+    <child link="frame_base_link"/>
+    <origin 
+       xyz="0 0 0"
+       rpy="0 0 4.71238898" />
+  </joint>
+
   <link name="frame_base_link">
     <inertial>
       <origin
@@ -40,8 +50,9 @@
       </geometry>
     </collision>
   </link>
+
   <link
-    name="wheel0">
+    name="left_wheel">
     <inertial>
       <origin
         xyz="-5.5511E-17 -0.036555 2.7756E-17"
@@ -81,7 +92,7 @@
     </collision>
   </link>
   <joint
-    name="joint0"
+    name="left_wheel_joint"
     type="continuous">
     <origin
       xyz="0.437249161240446 -0.155403500268594 0.138082115205387"
@@ -89,12 +100,12 @@
     <parent
       link="frame_base_link" />
     <child
-      link="wheel0" />
+      link="left_wheel" />
     <axis
       xyz="0 1 0" />
   </joint>
   <link
-    name="wheel1">
+    name="right_wheel">
     <inertial>
       <origin
         xyz="1.3878E-17 -0.036555 0"
@@ -134,7 +145,7 @@
     </collision>
   </link>
   <joint
-    name="joint1"
+    name="right_wheel_joint"
     type="continuous">
     <origin
       xyz="-0.0871543961968598 -0.155403500268594 0.138082115205387"
@@ -142,8 +153,19 @@
     <parent
       link="frame_base_link" />
     <child
-      link="wheel1" />
+      link="right_wheel" />
     <axis
       xyz="0 1 0" />
   </joint>
+
+      <plugin
+        filename="ignition-gazebo-diff-drive-system"
+        name="ignition::gazebo::systems::DiffDrive">
+        <left_joint>left_wheel_joint</left_joint>
+	<right_joint>right_wheel_joint</right_joint>
+        <wheel_separation>0.52435</wheel_separation>
+        <wheel_radius>0.081</wheel_radius>
+        <odom_publish_frequency>1</odom_publish_frequency>
+	<topic>cmd_vel</topic>
+      </plugin>
 </robot>
