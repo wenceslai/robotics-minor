@@ -148,10 +148,10 @@ class IsAlignedNode(Node):
             lines = list(itertools.chain.from_iterable(queue)) # flatten the list of line lists
 
             if debug and debug_iter == 0:
-                #cv2.imwrite(os.path.join(path, "original_image.png"), image)
-                #cv2.imwrite(os.path.join(path, "denoised_image.png"), denoised_image)
+                cv2.imwrite(os.path.join(path, "original_image.png"), image)
+                cv2.imwrite(os.path.join(path, "denoised_image.png"), denoised_image)
                 cv2.imwrite(os.path.join(path, "binarized_image.png"), binarized_image)
-                #cv2.imwrite(os.path.join(path, "detected_lines.png"), debug_lines(image, lines))
+                cv2.imwrite(os.path.join(path, "detected_lines.png"), debug_lines(image, lines))
 
             if len(lines) < K:
                 alignment_status = False
