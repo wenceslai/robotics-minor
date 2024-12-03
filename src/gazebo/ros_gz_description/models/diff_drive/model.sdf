@@ -1,149 +1,165 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
-     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
-     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
-<robot name="urdf-robot.SLDASM">
-  <link name="frame_base_link">
-    <inertial>
-      <origin
-        xyz="0.174583511826173 -0.270531094679587 0.175759169493147"
-        rpy="0 0 0" />
-      <mass
-        value="10.5515252104505" />
-      <inertia
-        ixx="0.0587549778491583"
-        ixz="1.57700965559471E-09"
-        ixy="-1.55558247097524E-07"
-        izz="0.196769177641087"
-        iyz="-9.37394462552013E-07"
-        iyy="0.145732241183979" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-		filename="file:///home/elias/git/robotics-minor/src/gazebo/ros_gz_description/models/meshes/frame_base_link.STL" />
-      </geometry>
-      <material name="">
-        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-		filename="file:///home/elias/git/robotics-minor/src/gazebo/ros_gz_description/models/meshes/frame_base_link.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <link
-    name="wheel0">
-    <inertial>
-      <origin
-        xyz="-5.5511E-17 -0.036555 2.7756E-17"
-        rpy="0 0 0" />
-      <mass
-        value="0.34293" />
-      <inertia
-        ixx="0.00040794"
-        ixy="5.7218E-22"
-        ixz="-1.3553E-20"
-        iyy="0.00069254"
-        iyz="9.0006E-20"
-        izz="0.00040794" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-		filename="file:///home/elias/git/robotics-minor/src/gazebo/ros_gz_description/models/meshes/wheel0.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="1 1 1 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-		filename="file:///home/elias/git/robotics-minor/src/gazebo/ros_gz_description/models/meshes/wheel0.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="joint0"
-    type="continuous">
-    <origin
-      xyz="0.437249161240446 -0.155403500268594 0.138082115205387"
-      rpy="3.14159265358979 -0.452659618711459 -1.5707963267949" />
-    <parent
-      link="frame_base_link" />
-    <child
-      link="wheel0" />
-    <axis
-      xyz="0 1 0" />
-  </joint>
-  <link
-    name="wheel1">
-    <inertial>
-      <origin
-        xyz="1.3878E-17 -0.036555 0"
-        rpy="0 0 0" />
-      <mass
-        value="0.34293" />
-      <inertia
-        ixx="0.00040794"
-        ixy="4.1413E-21"
-        ixz="-1.0842E-19"
-        iyy="0.00069254"
-        iyz="4.1465E-20"
-        izz="0.00040794" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-		filename="file:///home/elias/git/robotics-minor/src/gazebo/ros_gz_description/models/meshes/wheel1.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="1 1 1 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-		filename="file:///home/elias/git/robotics-minor/src/gazebo/ros_gz_description/models/meshes/wheel1.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="joint1"
-    type="continuous">
-    <origin
-      xyz="-0.0871543961968598 -0.155403500268594 0.138082115205387"
-      rpy="0 1.00456422093585 -1.5707963267949" />
-    <parent
-      link="frame_base_link" />
-    <child
-      link="wheel1" />
-    <axis
-      xyz="0 1 0" />
-  </joint>
-</robot>
+<?xml version="1.0" ?>
+<sdf version='1.11'>
+  <model name='diff_drive'>
+    <link name='frame_base_link'>
+      <inertial>
+        <pose>0.17458351182617299 -0.27053109467958703 0.17575916949314699 0 0 0</pose>
+        <mass>10.5515252104505</mass>
+        <inertia>
+          <ixx>0.058754977849158299</ixx>
+          <ixy>-1.55558247097524e-07</ixy>
+          <ixz>1.5770096555947099e-09</ixz>
+          <iyy>0.14573224118397901</iyy>
+          <iyz>-9.37394462552013e-07</iyz>
+          <izz>0.19676917764108701</izz>
+        </inertia>
+      </inertial>
+      <collision name='frame_base_link_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/wenceslai/dev/robotics-minor/src/gazebo/ros_gz_description/models/meshes/frame_base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='frame_base_link_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/wenceslai/dev/robotics-minor/src/gazebo/ros_gz_description/models/meshes/frame_base_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990196109 1 1 1</diffuse>
+          <ambient>0.990196109 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='joint0' type='revolute'>
+      <pose relative_to='frame_base_link'>0.43724916124044599 -0.15540350026859401 0.13808211520538699 3.14159265358979 -0.45265961871145888 -1.5707963267949001</pose>
+      <parent>frame_base_link</parent>
+      <child>wheel0</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='wheel0'>
+      <pose relative_to='joint0'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>-5.5511e-17 -0.036554999999999997 2.7755999999999999e-17 0 0 0</pose>
+        <mass>0.34293000000000001</mass>
+        <inertia>
+          <ixx>0.00040793999999999997</ixx>
+          <ixy>5.7217999999999997e-22</ixy>
+          <ixz>-1.3552999999999999e-20</ixz>
+          <iyy>0.00069253999999999995</iyy>
+          <iyz>9.0005999999999998e-20</iyz>
+          <izz>0.00040793999999999997</izz>
+        </inertia>
+      </inertial>
+      <collision name='wheel0_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/wenceslai/dev/robotics-minor/src/gazebo/ros_gz_description/models/meshes/wheel0.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='wheel0_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/wenceslai/dev/robotics-minor/src/gazebo/ros_gz_description/models/meshes/wheel0.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 1 1 1</diffuse>
+          <ambient>1 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='joint1' type='revolute'>
+      <pose relative_to='frame_base_link'>-0.087154396196859801 -0.15540350026859401 0.13808211520538699 0 1.0045642209358503 -1.5707963267949001</pose>
+      <parent>frame_base_link</parent>
+      <child>wheel1</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='wheel1'>
+      <pose relative_to='joint1'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>1.3878e-17 -0.036554999999999997 0 0 0 0</pose>
+        <mass>0.34293000000000001</mass>
+        <inertia>
+          <ixx>0.00040793999999999997</ixx>
+          <ixy>4.1412999999999999e-21</ixy>
+          <ixz>-1.0842e-19</ixz>
+          <iyy>0.00069253999999999995</iyy>
+          <iyz>4.1464999999999999e-20</iyz>
+          <izz>0.00040793999999999997</izz>
+        </inertia>
+      </inertial>
+      <collision name='wheel1_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/wenceslai/dev/robotics-minor/src/gazebo/ros_gz_description/models/meshes/wheel1.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='wheel1_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/wenceslai/dev/robotics-minor/src/gazebo/ros_gz_description/models/meshes/wheel1.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 1 1 1</diffuse>
+          <ambient>1 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+
+      <plugin
+        filename="ignition-gazebo-diff-drive-system"
+        name="ignition::gazebo::systems::DiffDrive">
+        <left_joint>joint0</left_joint>
+        <right_joint>joint1</right_joint>
+        <wheel_separation>1.25</wheel_separation>
+        <wheel_radius>0.3</wheel_radius>
+        <odom_publish_frequency>1</odom_publish_frequency>
+        <max_linear_acceleration>1</max_linear_acceleration>
+        <min_linear_acceleration>-1</min_linear_acceleration>
+        <max_angular_acceleration>2</max_angular_acceleration>
+        <min_angular_acceleration>-2</min_angular_acceleration>
+        <max_linear_velocity>0.5</max_linear_velocity>
+        <min_linear_velocity>-0.5</min_linear_velocity>
+        <max_angular_velocity>1</max_angular_velocity>
+        <min_angular_velocity>-1</min_angular_velocity>
+      </plugin>
+  </model>
+</sdf>
