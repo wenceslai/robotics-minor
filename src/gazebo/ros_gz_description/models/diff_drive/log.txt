@@ -1,0 +1,34 @@
+[INFO] [launch]: All log files can be found below /home/elias/.ros/log/2024-12-03-11-47-19-021701-DESKTOP-PVM8MP0-9558
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gazebo-1]: process started with pid [9561]
+[INFO] [parameter_bridge-2]: process started with pid [9562]
+[INFO] [robot_state_publisher-3]: process started with pid [9564]
+[INFO] [rviz2-4]: process started with pid [9565]
+[robot_state_publisher-3] [WARN] [1733222839.711186550] [kdl_parser]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[robot_state_publisher-3] [INFO] [1733222839.718487050] [robot_state_publisher]: Robot initialized
+[rviz2-4] [INFO] [1733222839.915289443] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-4] [INFO] [1733222839.915423343] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[rviz2-4] [INFO] [1733222839.959676641] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-4] [INFO] [1733222840.306848129] [rviz2]: Stereo is NOT SUPPORTED
+[parameter_bridge-2] [INFO] [1733222840.645351617] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/diff_drive/cmd_vel (geometry_msgs/msg/Twist) -> /model/diff_drive/cmd_vel (gz.msgs.Twist)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1733222840.652411917] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1733222840.656447617] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/model/diff_drive/odometry (gz.msgs.Odometry) -> /diff_drive/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1733222840.663792716] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/scan (gz.msgs.LaserScan) -> /diff_drive/scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1733222840.668049916] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/demo/model/diff_drive/joint_state (gz.msgs.Model) -> /joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1733222840.670910616] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/model/diff_drive/pose (gz.msgs.Pose_V) -> /tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1733222840.676402716] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/model/diff_drive/pose_static (gz.msgs.Pose_V) -> /tf_static (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1733222840.677777216] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/demo/model/diff_drive/link/camera_link/sensor/intel_realsense_d435i/camera_info (gz.msgs.CameraInfo) -> /robot1/D435i/color/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1733222840.680374816] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/demo/model/diff_drive/link/camera_link/sensor/intel_realsense_d435i/image (gz.msgs.Image) -> /robot1/D435i/color/image_raw (sensor_msgs/msg/Image)] (Lazy 0)
+[gazebo-1] libEGL warning: failed to open /dev/dri/renderD128: Permission denied
+[gazebo-1] 
+[gazebo-1] libEGL warning: failed to open /dev/dri/renderD128: Permission denied
+[gazebo-1] 
+[gazebo-1] libEGL warning: NEEDS EXTENSION: falling back to kms_swrast
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[robot_state_publisher-3] [INFO] [1733222899.289823590] [rclcpp]: signal_handler(signum=2)
+[parameter_bridge-2] [INFO] [1733222899.289837390] [rclcpp]: signal_handler(signum=2)
+[rviz2-4] [INFO] [1733222899.301585590] [rclcpp]: signal_handler(signum=2)
+[INFO] [parameter_bridge-2]: process has finished cleanly [pid 9562]
+[INFO] [robot_state_publisher-3]: process has finished cleanly [pid 9564]
+[INFO] [rviz2-4]: process has finished cleanly [pid 9565]
+[ERROR] [gazebo-1]: process has died [pid 9561, exit code -2, cmd 'ruby $(which gz) sim /home/elias/git/robotics-minor/install/ros_gz_gazebo/share/ros_gz_gazebo/worlds/diff_drive.sdf --force-version 8'].

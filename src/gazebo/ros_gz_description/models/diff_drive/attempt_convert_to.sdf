@@ -1,0 +1,172 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+<model name="diff_drive">
+  <link name="base_link" />
+
+  <joint name="base_to_frame" type="fixed">
+    <parent>base_link</parent>
+    <child>frame_base_link</child>
+    <!--pose>0 0 0 0 0 4.71238898</pose-->
+  </joint>
+
+  <link name="frame_base_link">
+    <!--pose>0.174583511826173 -0.270531094679587 0.175759169493147 0 0 0</pose-->
+    <inertial>
+      <mass>10.5515252104505</mass>
+      <inertia>
+        <ixx>0.0587549778491583</ixx>
+	<ixz>1.57700965559471E-09</ixz>
+	<ixy>-1.55558247097524E-07</ixy>
+	<izz>0.196769177641087</izz>
+	<iyz>-9.37394462552013E-07</iyz>
+	<iyy>0.145732241183979</iyy>
+      </inertia>
+    </inertial>
+    <visual name="visual_frame">
+      <geometry>
+	<mesh>
+	   <uri>file:///home/elias/git/robotics-minor/src/gazebo/ros_gz_description/models/meshes/frame_base_link.STL</uri>
+        </mesh>
+      </geometry>
+      <material>
+	<ambient>1.0 1.0 1.0 1</ambient>
+	<diffuse>1.0 1.0 1.0 1</diffuse>
+	<specular>1.0 1.0 1.0 1</specular>
+      </material>
+    </visual>
+    <collision name="collision_frame">
+      <geometry>
+	      <mesh>
+		      <uri>file:///home/elias/git/robotics-minor/src/gazebo/ros_gz_description/models/meshes/frame_base_link.STL</uri>
+	      </mesh>
+      </geometry>
+    </collision>
+  </link>
+
+  <!--link name="left_wheel">
+    <pose>-5.5511E-17 -0.036555 2.7756E-17 0 0 0</pose>
+    <inertial>
+	    <mass>0.34293</mass>
+	    <inertia>
+		    <ixx>0.00040794</ixx>
+		    <ixy>5.7218E-22</ixy>
+		    <ixz>-1.3553E-20</ixz>
+		    <iyy>0.00069254</iyy>
+		    <iyz>9.0006E-20</iyz>
+		    <izz>0.00040794</izz>
+	    </inertia>
+    </inertial>
+    <visual name="visual_left_wheel">
+      <geometry>
+	      <mesh>
+		      <uri>file:///home/elias/git/robotics-minor/src/gazebo/ros_gz_description/models/meshes/gazebo-wheels.STL</uri>
+	  <scale>0.001 0.001 0.001</scale>
+	      </mesh>
+      </geometry>
+      <material>
+	<ambient>0.5 0.5 0.5 1</ambient>
+	<diffuse>0.5 0.5 0.5 1</diffuse>
+	<specular>0.5 0.5 0.5 1</specular>
+      </material>
+    </visual>
+    <collision name="collision_left_wheel">
+      <geometry>
+	      <mesh>
+		      <uri>file:///home/elias/git/robotics-minor/src/gazebo/ros_gz_description/models/meshes/gazebo_wheels.STL</uri>
+	  <scale>0.001 0.001 0.001</scale>
+	      </mesh>
+      </geometry>
+    </collision>
+  </link-->
+  <link name="right_wheel">
+    <pose>1.3878E-17 -0.036555 0 0 0 0</pose>
+    <inertial>
+      <mass>0.34293</mass>
+      <inertia>
+	<ixx>0.00040794</ixx>
+	<ixy>4.1413E-21</ixy>
+	<ixz>-1.0842E-19</ixz>
+	<iyy>0.00069254</iyy>
+	<iyz>4.1465E-20</iyz>
+	<izz>0.00040794</izz>
+      </inertia>
+    </inertial>
+    <visual name="visual_right_wheel">
+      <geometry>
+	<mesh>
+	  <uri>file:///home/elias/git/robotics-minor/src/gazebo/ros_gz_description/models/meshes/gazebo-wheels.STL</uri>
+	  <scale>0.001 0.001 0.001</scale>
+        </mesh>
+      </geometry>
+      <material>
+	<ambient>0.5 0.5 0.5 1</ambient>
+	<diffuse>0.5 0.5 0.5 1</diffuse>
+	<specular>0.5 0.5 0.5 1</specular>
+      </material>
+    </visual>
+    <collision name="collision_right_wheel">
+      <geometry>
+	<mesh>
+	  <uri>file:///home/elias/git/robotics-minor/src/gazebo/ros_gz_description/models/meshes/gazebo-wheels.STL</uri>
+	  <scale>0.001 0.001 0.001</scale>
+        </mesh>
+      </geometry>
+    </collision>
+  </link>
+  <!--joint name="left_wheel_joint" type="revolute">
+	  <pose>0.437249161240446 -0.155403500268594 0.138082115205387 3.14159265358979 0 -1.5707963267949</pose>
+	  <!-pose>0 0 0 1.57079632 0 -1.5707963267949</pose->
+	  <!-pose relative_to="frame_base_link">0 0 0 0 0 0</pose->
+
+    <parent>frame_base_link</parent>
+    <child>left_wheel</child>
+    <axis>
+      <xyz>0 0 1</xyz>
+      <limit>
+        <lower>-1.79769e+308</lower>
+        <upper>1.79769e+308</upper>
+      </limit>
+    </axis>
+    </joint-->
+  <joint name="right_wheel_joint" type="revolute">
+    <pose>-0.0871543961968598 -0.155403500268594 0.138082115205387 0 0 -1.5707963267949</pose>
+    <parent>frame_base_link</parent>
+    <child>right_wheel</child>
+    <axis>
+      <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-1.79769e+308</lower>
+            <upper>1.79769e+308</upper>
+          </limit>
+    </axis>
+  </joint>
+  <!--joint
+    name="odom_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="frame_base_link" />
+    <child
+      link="odom" />
+  </joint-->
+
+      <plugin
+        filename="ignition-gazebo-diff-drive-system"
+        name="ignition::gazebo::systems::DiffDrive">
+        <left_joint>left_wheel_joint</left_joint>
+	<right_joint>right_wheel_joint</right_joint>
+        <wheel_separation>0.52435</wheel_separation>
+        <wheel_radius>0.081</wheel_radius>
+	<command_topic>cmd_vel</command_topic>
+        <odom_publish_frequency>1</odom_publish_frequency>
+	<!--publish_odom>true</publish_odom>
+	<publish_odom_tf>true</publish_odom_tf>
+	<publish_odom_wheel_tf>false</publish_odom_wheel_tf>
+	<odometry_topic>odom</odometry_topic>
+	<odometry_frame>odom</odometry_frame>
+	<robot_base_frame>base_link</robot_base_frame-->
+      </plugin>
+</model>
+</sdf>

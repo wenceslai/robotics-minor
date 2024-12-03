@@ -122,7 +122,7 @@
     </model>
 
     <model name="diff_drive">
-      <self_collide>true</self_collide>
+      <self_collide>false</self_collide>
       <pose>0 0 0.35 0 0 0</pose>
       <include merge="true">
         <uri>package://ros_gz_description/models/diff_drive</uri>
@@ -142,12 +142,12 @@
         <static_update_frequency>1</static_update_frequency>
       </plugin>
 
-      <plugin
+      <!--plugin
         filename="gz-sim-odometry-publisher-system"
         name="gz::sim::systems::OdometryPublisher">
         <odom_frame>diff_drive/odom</odom_frame>
-        <robot_base_frame>diff_drive</robot_base_frame>
-      </plugin>
+	<robot_base_frame>diff_drive/base_link</robot_base_frame>
+      </plugin-->
     </model>
   </world>
 </sdf>
