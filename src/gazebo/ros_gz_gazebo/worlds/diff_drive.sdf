@@ -76,13 +76,13 @@
     </model>
 
     <model name="pipe_rails2">
-      <pose>2 2 0.051 0 1.57 0</pose>
+      <pose>-0.0255 2 0.051 1.57 1.57 0</pose>
       <static>true</static>
       <link name="rail">
         <collision name="rail_collision">
           <geometry>
             <cylinder>
-              <radius>0.051</radius> <!-- 51mm radius -->
+              <radius>0.0255</radius> <!-- 51mm radius -->
               <length>10</length> <!-- Length of the rail -->
             </cylinder>
           </geometry>
@@ -90,7 +90,7 @@
         <visual name="rail_visual">
           <geometry>
             <cylinder>
-              <radius>0.051</radius>
+              <radius>0.0255</radius>
               <length>10</length>
             </cylinder>
           </geometry>
@@ -99,13 +99,13 @@
     </model> 
 
     <model name="pipe_rails">
-      <pose>2 2.596 0.051 0 1.57 0</pose>
+      <pose>0.5255 2 0.051 1.57 1.57 0</pose>
       <static>true</static>
       <link name="rail">
         <collision name="rail_collision">
           <geometry>
             <cylinder>
-              <radius>0.051</radius> <!-- 51mm radius -->
+              <radius>0.0255</radius> <!-- 51mm radius -->
               <length>10</length> <!-- Length of the rail -->
             </cylinder>
           </geometry>
@@ -113,7 +113,7 @@
         <visual name="rail_visual">
           <geometry>
             <cylinder>
-              <radius>0.051</radius>
+              <radius>0.0255</radius>
               <length>10</length>
             </cylinder>
           </geometry>
@@ -122,8 +122,8 @@
     </model>
 
     <model name="diff_drive">
-      <self_collide>true</self_collide>
-      <pose>0 0 -0.055 0 0 0</pose>
+      <self_collide>false</self_collide>
+      <pose>0.085 0 -0.055 0 0 0</pose>
       <include merge="true">
         <uri>package://ros_gz_description/models/diff_drive</uri>
       </include>

@@ -7,10 +7,10 @@
         <mass>10.5515252104505</mass>
         <inertia>
           <ixx>0.058754977849158299</ixx>
-          <ixy>-1.55558247097524e-07</ixy>
-          <ixz>1.5770096555947099e-09</ixz>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
           <iyy>0.14573224118397901</iyy>
-          <iyz>-9.37394462552013e-07</iyz>
+          <iyz>0</iyz>
           <izz>0.19676917764108701</izz>
         </inertia>
       </inertial>
@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/wenceslai/dev/robotics-minor/src/gazebo/ros_gz_description/models/meshes/frame_base_link.STL</uri>
+            <uri>file:///home/elias/git/robotics-minor/src/gazebo/ros_gz_description/models/meshes/frame_base_link.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -28,7 +28,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/wenceslai/dev/robotics-minor/src/gazebo/ros_gz_description/models/meshes/frame_base_link.STL</uri>
+            <uri>file:///home/elias/git/robotics-minor/src/gazebo/ros_gz_description/models/meshes/frame_base_link.STL</uri>
           </mesh>
         </geometry>
         <material>
@@ -56,14 +56,14 @@
     <link name='wheel0'>
       <pose relative_to='joint0'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>-5.5511e-17 -0.036554999999999997 2.7755999999999999e-17 0 0 0</pose>
+        <pose>0 0 0 0 0 0</pose>
         <mass>0.34293000000000001</mass>
         <inertia>
           <ixx>0.00040793999999999997</ixx>
-          <ixy>5.7217999999999997e-22</ixy>
-          <ixz>-1.3552999999999999e-20</ixz>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
           <iyy>0.00069253999999999995</iyy>
-          <iyz>9.0005999999999998e-20</iyz>
+          <iyz>0</iyz>
           <izz>0.00040793999999999997</izz>
         </inertia>
       </inertial>
@@ -72,7 +72,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/wenceslai/dev/robotics-minor/src/gazebo/ros_gz_description/models/meshes/wheel0.STL</uri>
+            <uri>file:///home/elias/git/robotics-minor/src/gazebo/ros_gz_description/models/meshes/wheel0.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -81,7 +81,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/wenceslai/dev/robotics-minor/src/gazebo/ros_gz_description/models/meshes/wheel0.STL</uri>
+            <uri>file:///home/elias/git/robotics-minor/src/gazebo/ros_gz_description/models/meshes/wheel0.STL</uri>
           </mesh>
         </geometry>
         <material>
@@ -95,7 +95,7 @@
       <parent>frame_base_link</parent>
       <child>wheel1</child>
       <axis>
-        <xyz>0 1 0</xyz>
+        <xyz>0 -1 0</xyz>
         <limit>
           <lower>-inf</lower>
           <upper>inf</upper>
@@ -109,14 +109,14 @@
     <link name='wheel1'>
       <pose relative_to='joint1'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>1.3878e-17 -0.036554999999999997 0 0 0 0</pose>
+        <pose>0 0 0 0 0 0</pose>
         <mass>0.34293000000000001</mass>
         <inertia>
           <ixx>0.00040793999999999997</ixx>
-          <ixy>4.1412999999999999e-21</ixy>
-          <ixz>-1.0842e-19</ixz>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
           <iyy>0.00069253999999999995</iyy>
-          <iyz>4.1464999999999999e-20</iyz>
+          <iyz>0</iyz>
           <izz>0.00040793999999999997</izz>
         </inertia>
       </inertial>
@@ -125,7 +125,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/wenceslai/dev/robotics-minor/src/gazebo/ros_gz_description/models/meshes/wheel1.STL</uri>
+            <uri>file:///home/elias/git/robotics-minor/src/gazebo/ros_gz_description/models/meshes/wheel1.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -134,7 +134,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/wenceslai/dev/robotics-minor/src/gazebo/ros_gz_description/models/meshes/wheel1.STL</uri>
+            <uri>file:///home/elias/git/robotics-minor/src/gazebo/ros_gz_description/models/meshes/wheel1.STL</uri>
           </mesh>
         </geometry>
         <material>
@@ -149,8 +149,8 @@
         name="ignition::gazebo::systems::DiffDrive">
         <left_joint>joint0</left_joint>
         <right_joint>joint1</right_joint>
-        <wheel_separation>1.25</wheel_separation>
-        <wheel_radius>0.3</wheel_radius>
+        <wheel_separation>0.52435</wheel_separation>
+        <wheel_radius>0.081</wheel_radius>
         <odom_publish_frequency>1</odom_publish_frequency>
         <max_linear_acceleration>1</max_linear_acceleration>
         <min_linear_acceleration>-1</min_linear_acceleration>
