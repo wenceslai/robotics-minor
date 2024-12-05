@@ -35,13 +35,34 @@
   gz_type_name: "gz.msgs.Pose_V"
   direction: GZ_TO_ROS
 - ros_topic_name: "/robot1/D435i/color/camera_info"
-  gz_topic_name: "/world/demo/model/diff_drive/link/camera_link/sensor/intel_realsense_d435i/camera_info"
+  gz_topic_name: "/world/demo/model/diff_drive/model/diff_drive/link/camera_link/sensor/intel_realsense_d435i/camera_info"
   ros_type_name: "sensor_msgs/msg/CameraInfo"
   gz_type_name: "gz.msgs.CameraInfo"
   direction: GZ_TO_ROS
 - ros_topic_name: "/robot1/D435i/color/image_raw"
-  gz_topic_name: "/world/demo/model/diff_drive/link/camera_link/sensor/intel_realsense_d435i/image"
+  gz_topic_name: "/world/demo/model/diff_drive/model/diff_drive/link/camera_link/sensor/intel_realsense_d435i/image"
   ros_type_name: "sensor_msgs/msg/Image"
   gz_type_name: "gz.msgs.Image"
   direction: GZ_TO_ROS
+- ros_topic_name: "/robot1/ultrasonic1"
+  gz_topic_name: "/world/demo/model/diff_drive/model/diff_drive/link/ultrasonic_1_link/sensor/ultrasonic_1/scan"
+  ros_type_name: "sensor_msgs/msg/LaserScan"
+  gz_type_name: "gz.msgs.LaserScan"
+  direction: GZ_TO_ROS
+- ros_topic_name: "/robot1/ultrasonic2"
+  gz_topic_name: "/world/demo/model/diff_drive/model/diff_drive/link/ultrasonic_2_link/sensor/ultrasonic_2/scan"
+  ros_type_name: "sensor_msgs/msg/LaserScan"
+  gz_type_name: "gz.msgs.LaserScan"
+  direction: GZ_TO_ROS
+- ros_topic_name: "/robot1/ultrasonic3"
+  gz_topic_name: "/world/demo/model/diff_drive/model/diff_drive/link/ultrasonic_3_link/sensor/ultrasonic_3/scan"
+  ros_type_name: "sensor_msgs/msg/LaserScan"
+  gz_type_name: "gz.msgs.LaserScan"
+  direction: GZ_TO_ROS
+- ros_topic_name: "/robot1/ultrasonic4"
+  gz_topic_name: "/world/demo/model/diff_drive/model/diff_drive/link/ultrasonic_4_link/sensor/ultrasonic_4/scan"
+  ros_type_name: "sensor_msgs/msg/LaserScan"
+  gz_type_name: "gz.msgs.LaserScan"
+  direction: GZ_TO_ROS
+
 

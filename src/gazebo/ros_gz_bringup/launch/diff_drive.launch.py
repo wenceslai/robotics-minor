@@ -63,6 +63,17 @@ def generate_launch_description():
         ]
     )
 
+    joint_state_publisher = Node(
+        package='joint_state_publisher',
+        executable='joint_state_publisher',
+        name='joint_state_publisher',
+        output='both',
+        parameters=[
+            {'use_sim_time': True},
+            {'robot_description': robot_desc},
+        ]
+    )
+
     # Visualize in RViz
     rviz = Node(
        package='rviz2',
@@ -88,5 +99,6 @@ def generate_launch_description():
                               description='Open RViz.'),
         bridge,
         robot_state_publisher,
+        joint_state_publisher,
         rviz
     ])
