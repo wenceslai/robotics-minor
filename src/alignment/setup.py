@@ -23,6 +23,7 @@ setup(
             'obstacle_detection_node = alignment.obstacle_detection:main',
             'motor_control_node = alignment.motor_control:main',
 	        'is_aligned_node = alignment.is_aligned:main',
+            'navigation = alignment.navigation:main'
         ],
     },
 )

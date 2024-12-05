@@ -406,8 +406,8 @@
       <plugin
         filename="ignition-gazebo-diff-drive-system"
         name="ignition::gazebo::systems::DiffDrive">
-        <left_joint>joint0</left_joint>
-        <right_joint>joint1</right_joint>
+        <left_joint>wheel0_joint</left_joint>
+        <right_joint>wheel1_joint</right_joint>
         <wheel_separation>0.52435</wheel_separation>
         <wheel_radius>0.081</wheel_radius>
         <odom_publish_frequency>1</odom_publish_frequency>
