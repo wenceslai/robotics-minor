@@ -48,78 +48,168 @@
       <direction>-0.5 0.1 -0.9</direction>
     </light>
 
-    <model name="ground_plane">
-      <static>true</static>
-      <link name="link">
+  <model name="ground_plane">
+    <static>true</static>
+    <link name="link">
         <collision name="collision">
-          <geometry>
+        <geometry>
             <plane>
-              <normal>0 0 1</normal>
-              <size>100 100</size>
+            <normal>0 0 1</normal>
+            <size>20 20</size>
             </plane>
-          </geometry>
+        </geometry>
         </collision>
         <visual name="visual">
-          <geometry>
+        <geometry>
             <plane>
-              <normal>0 0 1</normal>
-              <size>100 100</size>
+            <normal>0 0 1</normal>
+            <size>14 14</size>
             </plane>
-          </geometry>
-          <material>
-            <ambient>0.8 0.8 0.8 1</ambient>
-            <diffuse>0.8 0.8 0.8 1</diffuse>
-            <specular>0.8 0.8 0.8 1</specular>
-          </material>
+        </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/DarkGray</name>        
+        </script>
+      </material>
         </visual>
-      </link>
+    </link>
     </model>
 
-    <model name="pipe_rails2">
-      <pose>-0.0255 2 0.051 1.57 1.57 0</pose>
-      <static>true</static>
-      <link name="rail">
-        <collision name="rail_collision">
-          <geometry>
-            <cylinder>
-              <radius>0.0255</radius> <!-- 51mm radius -->
-              <length>10</length> <!-- Length of the rail -->
-            </cylinder>
-          </geometry>
-        </collision>
-        <visual name="rail_visual">
-          <geometry>
-            <cylinder>
-              <radius>0.0255</radius>
-              <length>10</length>
-            </cylinder>
-          </geometry>
-        </visual>
-      </link>
-    </model> 
+  <model name="shed">
+    <static>true</static>
+    <link name="tunnel_link">
+    <pose>-4 0 0 0 0 0</pose>
+      <!-- Left Wall -->
+      <visual name="left_wall_visual">
+        <pose>-0.375 0 0.75 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.05 1.56 1.5</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.8 0.1 0.1 1</ambient>
+          <diffuse>0.8 0.1 0.1 1</diffuse>
+        </material>
+      </visual>
+      <collision name="left_wall_collision">
+        <pose>-0.375 0 0.75 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.05 1.56 1.5</size>
+          </box>
+        </geometry>
+      </collision>
+      
+      <!-- Right Wall -->
+      <visual name="right_wall_visual">
+        <pose>0.375 0 0.75 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.05 1.56 1.5</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.8 0.1 0.1 1</ambient>
+          <diffuse>0.8 0.1 0.1 1</diffuse>
+        </material>
+      </visual>
+      <collision name="right_wall_collision">
+        <pose>0.375 0 0.75 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.05 1.56 1.5</size>
+          </box>
+        </geometry>
+      </collision>
+      
+      <!-- Ceiling -->
+      <visual name="ceiling_visual">
+        <pose>0 0 1.5 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.8 1.56 0.05</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.8 0.1 0.1 1</ambient>
+          <diffuse>0.8 0.1 0.1 1</diffuse>
+        </material>
+      </visual>
+      <collision name="ceiling_collision">
+        <pose>0 0 1.5 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.8 1.56 0.05</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+  </model>
 
-    <model name="pipe_rails">
-      <pose>0.5255 2 0.051 1.57 1.57 0</pose>
-      <static>true</static>
-      <link name="rail">
-        <collision name="rail_collision">
-          <geometry>
-            <cylinder>
-              <radius>0.0255</radius> <!-- 51mm radius -->
-              <length>10</length> <!-- Length of the rail -->
-            </cylinder>
-          </geometry>
-        </collision>
-        <visual name="rail_visual">
-          <geometry>
-            <cylinder>
-              <radius>0.0255</radius>
-              <length>10</length>
-            </cylinder>
-          </geometry>
-        </visual>
-      </link>
-    </model>
+
+<actor name="Dave">
+    <skin>
+        <filename>https://fuel.gazebosim.org/1.0/Mingfei/models/actor/tip/files/meshes/walk.dae</filename>
+        <scale>1.0</scale>
+    </skin>
+    <animation name="walk">
+        <filename>https://fuel.gazebosim.org/1.0/Mingfei/models/actor/tip/files/meshes/walk.dae</filename>
+        <interpolate_x>true</interpolate_x>
+    </animation>
+      <script>
+        <loop>true</loop>
+        <delay_start>0.000000</delay_start>
+        <auto_start>true</auto_start>
+        <trajectory id="0" type="walk" tension="0.6">
+            <waypoint>
+                <time>0</time>
+                <pose>-3 -6 1.0 0 0 0</pose>
+            </waypoint>
+            <waypoint>
+                <time>3</time>
+                <pose>0 -6 1.0 0 0 0</pose>
+            </waypoint>
+            <waypoint>
+                <time>3.5</time>
+                <pose>0 -6 1.0 0 0 1.57</pose>
+            </waypoint>
+            <waypoint>
+                <time>9.5</time>
+                <pose>0 6 1.0 0 0 1.57</pose>
+            </waypoint>
+            <waypoint>
+                <time>10</time>
+                <pose>0 6 1.0 0 0 3.142</pose>
+            </waypoint>
+            <waypoint>
+                <time>13</time>
+                <pose>-3 6 1 0 0 3.142</pose>
+            </waypoint>
+            <waypoint>
+                <time>13.5</time>
+                <pose>-3 6 1 0 0 -1.57</pose>
+            </waypoint>
+            <waypoint>
+                <time>19.5</time>
+                <pose>-3 -6 1.0 0 0 -1.57</pose>
+            </waypoint>
+            <waypoint>
+                <time>20</time>
+                <pose>-3 -6 1.0 0 0 0</pose>
+            </waypoint>
+        </trajectory>
+    </script>
+</actor>
+
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/aws_robomaker_warehouse_PalletJackB_01
+</uri>
+<pose>3 5 0 0 0 -1.9</pose>
+</include>
+
 
     <model name="diff_drive">
       <pose>0.085 0 -0.055 0 0 0</pose>
@@ -127,6 +217,540 @@
         <uri>package://ros_gz_description/models/diff_drive</uri>
       </include>
     </model>
+
+<model name="combined_pipe_rectangle">
+  <pose>5 0 0.051 0 1.57 0</pose>
+  <static>true</static>
+
+  <!-- First Rail -->
+  <link name="rail1">
+    <collision name="rail1_collision">
+      <geometry>
+        <cylinder>
+          <radius>0.051</radius> <!-- 51mm radius -->
+          <length>5</length> <!-- Length of the rail -->
+        </cylinder>
+      </geometry>
+    </collision>
+    <visual name="rail1_visual">
+      <geometry>
+        <cylinder>
+          <radius>0.051</radius>
+          <length>5</length>
+        </cylinder>
+      </geometry>
+    </visual>
+    <pose>0 0 0 0 0 0</pose> <!-- Position relative to the model -->
+  </link>
+
+  <!-- Second Rail -->
+  <link name="rail2">
+    <collision name="rail2_collision">
+      <geometry>
+        <cylinder>
+          <radius>0.051</radius> <!-- 51mm radius -->
+          <length>5</length> <!-- Length of the rail -->
+        </cylinder>
+      </geometry>
+    </collision>
+    <visual name="rail2_visual">
+      <geometry>
+        <cylinder>
+          <radius>0.051</radius>
+          <length>5</length>
+        </cylinder>
+      </geometry>
+    </visual>
+    <pose>0 0.596 0 0 0 0</pose> <!-- Offset to place next to the first rail -->
+  </link>
+
+  <!-- Connecting Pipe at Start -->
+  <link name="start_pipe">
+    <collision name="start_pipe_collision">
+      <geometry>
+        <cylinder>
+          <radius>0.051</radius> <!-- 51mm radius -->
+          <length>0.596</length> <!-- Distance between the two rails -->
+        </cylinder>
+      </geometry>
+    </collision>
+    <visual name="start_pipe_visual">
+      <geometry>
+        <cylinder>
+          <radius>0.051</radius>
+          <length>0.596</length>
+        </cylinder>
+      </geometry>
+    </visual>
+    <pose>0 0.298 -2.485 1.57 0 0</pose> <!-- Centered and perpendicular -->
+  </link>
+</model>
+
+
+<model name="combined_pipe_rectangle2">
+  <pose>5 -2 0.051 0 1.57 0</pose>
+  <static>true</static>
+
+  <!-- First Rail -->
+  <link name="rail1">
+    <collision name="rail1_collision">
+      <geometry>
+        <cylinder>
+          <radius>0.051</radius> <!-- 51mm radius -->
+          <length>5</length> <!-- Length of the rail -->
+        </cylinder>
+      </geometry>
+    </collision>
+    <visual name="rail1_visual">
+      <geometry>
+        <cylinder>
+          <radius>0.051</radius>
+          <length>5</length>
+        </cylinder>
+      </geometry>
+    </visual>
+    <pose>0 0 0 0 0 0</pose> <!-- Position relative to the model -->
+  </link>
+
+  <!-- Second Rail -->
+  <link name="rail2">
+    <collision name="rail2_collision">
+      <geometry>
+        <cylinder>
+          <radius>0.051</radius> <!-- 51mm radius -->
+          <length>5</length> <!-- Length of the rail -->
+        </cylinder>
+      </geometry>
+    </collision>
+    <visual name="rail2_visual">
+      <geometry>
+        <cylinder>
+          <radius>0.051</radius>
+          <length>5</length>
+        </cylinder>
+      </geometry>
+    </visual>
+    <pose>0 0.596 0 0 0 0</pose> <!-- Offset to place next to the first rail -->
+  </link>
+
+  <!-- Connecting Pipe at Start -->
+  <link name="start_pipe">
+    <collision name="start_pipe_collision">
+      <geometry>
+        <cylinder>
+          <radius>0.051</radius> <!-- 51mm radius -->
+          <length>0.596</length> <!-- Distance between the two rails -->
+        </cylinder>
+      </geometry>
+    </collision>
+    <visual name="start_pipe_visual">
+      <geometry>
+        <cylinder>
+          <radius>0.051</radius>
+          <length>0.596</length>
+        </cylinder>
+      </geometry>
+    </visual>
+    <pose>0 0.298 -2.485 1.57 0 0</pose> <!-- Centered and perpendicular -->
+  </link>
+</model>
+
+<model name="combined_pipe_rectangle3">
+  <pose>5 -4 0.051 0 1.57 0</pose>
+  <static>true</static>
+
+  <!-- First Rail -->
+  <link name="rail1">
+    <collision name="rail1_collision">
+      <geometry>
+        <cylinder>
+          <radius>0.051</radius> <!-- 51mm radius -->
+          <length>5</length> <!-- Length of the rail -->
+        </cylinder>
+      </geometry>
+    </collision>
+    <visual name="rail1_visual">
+      <geometry>
+        <cylinder>
+          <radius>0.051</radius>
+          <length>5</length>
+        </cylinder>
+      </geometry>
+    </visual>
+    <pose>0 0 0 0 0 0</pose> <!-- Position relative to the model -->
+  </link>
+
+  <!-- Second Rail -->
+  <link name="rail2">
+    <collision name="rail2_collision">
+      <geometry>
+        <cylinder>
+          <radius>0.051</radius> <!-- 51mm radius -->
+          <length>5</length> <!-- Length of the rail -->
+        </cylinder>
+      </geometry>
+    </collision>
+    <visual name="rail2_visual">
+      <geometry>
+        <cylinder>
+          <radius>0.051</radius>
+          <length>5</length>
+        </cylinder>
+      </geometry>
+    </visual>
+    <pose>0 0.596 0 0 0 0</pose> <!-- Offset to place next to the first rail -->
+  </link>
+
+  <!-- Connecting Pipe at Start -->
+  <link name="start_pipe">
+    <collision name="start_pipe_collision">
+      <geometry>
+        <cylinder>
+          <radius>0.051</radius> <!-- 51mm radius -->
+          <length>0.596</length> <!-- Distance between the two rails -->
+        </cylinder>
+      </geometry>
+    </collision>
+    <visual name="start_pipe_visual">
+      <geometry>
+        <cylinder>
+          <radius>0.051</radius>
+          <length>0.596</length>
+        </cylinder>
+      </geometry>
+    </visual>
+    <pose>0 0.298 -2.485 1.57 0 0</pose> <!-- Centered and perpendicular -->
+  </link>
+</model>
+
+<model name="combined_pipe_rectangle4">
+  <pose>5 2 0.051 0 1.57 0</pose>
+  <static>true</static>
+
+  <!-- First Rail -->
+  <link name="rail1">
+    <collision name="rail1_collision">
+      <geometry>
+        <cylinder>
+          <radius>0.051</radius> <!-- 51mm radius -->
+          <length>5</length> <!-- Length of the rail -->
+        </cylinder>
+      </geometry>
+    </collision>
+    <visual name="rail1_visual">
+      <geometry>
+        <cylinder>
+          <radius>0.051</radius>
+          <length>5</length>
+        </cylinder>
+      </geometry>
+    </visual>
+    <pose>0 0 0 0 0 0</pose> <!-- Position relative to the model -->
+  </link>
+
+  <!-- Second Rail -->
+  <link name="rail2">
+    <collision name="rail2_collision">
+      <geometry>
+        <cylinder>
+          <radius>0.051</radius> <!-- 51mm radius -->
+          <length>5</length> <!-- Length of the rail -->
+        </cylinder>
+      </geometry>
+    </collision>
+    <visual name="rail2_visual">
+      <geometry>
+        <cylinder>
+          <radius>0.051</radius>
+          <length>5</length>
+        </cylinder>
+      </geometry>
+    </visual>
+    <pose>0 0.596 0 0 0 0</pose> <!-- Offset to place next to the first rail -->
+  </link>
+
+  <!-- Connecting Pipe at Start -->
+  <link name="start_pipe">
+    <collision name="start_pipe_collision">
+      <geometry>
+        <cylinder>
+          <radius>0.051</radius> <!-- 51mm radius -->
+          <length>0.596</length> <!-- Distance between the two rails -->
+        </cylinder>
+      </geometry>
+    </collision>
+    <visual name="start_pipe_visual">
+      <geometry>
+        <cylinder>
+          <radius>0.051</radius>
+          <length>0.596</length>
+        </cylinder>
+      </geometry>
+    </visual>
+    <pose>0 0.298 -2.485 1.57 0 0</pose> <!-- Centered and perpendicular -->
+  </link>
+</model>
+
+  <model name="greenhouse_wall">
+    <static>true</static>
+    <link name="link">
+        <collision name="collision">
+        <geometry>
+            <plane>
+            <normal>0 0 1</normal>
+            <size>3 14</size>
+            </plane>
+        </geometry>
+        </collision>
+        <visual name="visual">
+        <geometry>
+            <plane>
+            <normal>0 0 1</normal>
+            <size>3 14</size>
+            </plane>
+        </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Grey</name>        
+        </script>
+      </material>
+        </visual>
+        <pose>6.5 0 1.5 0 1.57 3.14</pose>
+    </link>
+    </model>
+
+
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>6 1.3 -3 0 0 1.57</pose>
+<name>row1_l</name>
+</include>
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>6 -0.7 -3 0 0 1.57</pose>
+<name>row1_r</name>
+</include>
+
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>5.5 1.3 -3 0 0 1.57</pose>
+<name>row2_l</name>
+</include>
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>5.5 -0.7 -3 0 0 1.57</pose>
+<name>row2_r</name>
+</include>
+
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>5 1.3 -3 0 0 1.57</pose>
+<name>row3_l</name>
+</include>
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>5 -0.7 -3 0 0 1.57</pose>
+<name>row3_r</name>
+</include>
+
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>4.5 1.3 -3 0 0 1.57</pose>
+<name>row4_l</name>
+</include>
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>4.5 -0.7 -3 0 0 1.57</pose>
+<name>row4_r</name>
+</include>
+
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>4 1.3 -3 0 0 1.57</pose>
+<name>row5_l</name>
+</include>
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>4 -0.7 -3 0 0 1.57</pose>
+<name>row5_r</name>
+</include>
+
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>3.5 1.3 -3 0 0 1.57</pose>
+<name>row6_l</name>
+</include>
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>3.5 -0.7 -3 0 0 1.57</pose>
+<name>row6_r</name>
+</include>
+
+
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>6 3.3 -3 0 0 1.57</pose>
+<name>row1_l2</name>
+</include>
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>6 -2.7 -3 0 0 1.57</pose>
+<name>row1_r2</name>
+</include>
+
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>5.5 3.3 -3 0 0 1.57</pose>
+<name>row2_l2</name>
+</include>
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>5.5 -2.7 -3 0 0 1.57</pose>
+<name>row2_r2</name>
+</include>
+
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>5 3.3 -3 0 0 1.57</pose>
+<name>row3_l2</name>
+</include>
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>5 -2.7 -3 0 0 1.57</pose>
+<name>row3_r2</name>
+</include>
+
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>4.5 3.3 -3 0 0 1.57</pose>
+<name>row4_l2</name>
+</include>
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>4.5 -2.7 -3 0 0 1.57</pose>
+<name>row4_r2</name>
+</include>
+
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>4 3.3 -3 0 0 1.57</pose>
+<name>row5_l2</name>
+</include>
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>4 -2.7 -3 0 0 1.57</pose>
+<name>row5_r2</name>
+</include>
+
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>3.5 3.3 -3 0 0 1.57</pose>
+<name>row6_l2</name>
+</include>
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>3.5 -2.7 -3 0 0 1.57</pose>
+<name>row6_r2</name>
+</include>
+
+
+
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>6 -4.7 -3 0 0 1.57</pose>
+<name>row1_r3</name>
+</include>
+
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>5.5 -4.7 -3 0 0 1.57</pose>
+<name>row2_r3</name>
+</include>
+
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>5 -4.7 -3 0 0 1.57</pose>
+<name>row3_r3</name>
+</include>
+
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>4.5 -4.7 -3 0 0 1.57</pose>
+<name>row4_r3</name>
+</include>
+
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>4 -4.7 -3 0 0 1.57</pose>
+<name>row5_r3</name>
+</include>
+
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine Tree
+</uri>
+<pose>3.5 -4.7 -3 0 0 1.57</pose>
+<name>row6_r3</name>
+</include>
 
   </world>
 </sdf>
